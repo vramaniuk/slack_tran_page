@@ -1,7 +1,4 @@
 * {
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -71,7 +68,7 @@ i.online {
     /*z-index: 201;*/
     /*box-sizing: content-box;*/
     /*visibility: visible;*/
-    width: 220px;
+    min-width: 220px;
     height: 902px;
     background: #4f5452;
 }
@@ -105,15 +102,17 @@ i.online {
     width: 1620px;
     background-color: grey;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 .client_main_container_main {
+    flex-grow:3;
     height: 902px;
     width: 1120px;
     background-color: #2ab27b;
 }
 .client_main_container_posts {
+    flex-grow:1;
     height: 800px;
     width: 1120px;
     background-color: #7F7F83;
