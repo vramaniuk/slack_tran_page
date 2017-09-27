@@ -1,0 +1,103 @@
+* {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'lucida-grande';
+    src: url('../fonts/ufonts.com_lucida-grande.ttf');
+}
+
+body {
+    font-family: 'lucida-grande', sans-serif;
+}
+
+.feature_name_tagging_client light_theme {
+    font-family: 'lucida-grande', sans-serif;
+}
+
+#client-ui {
+    display: flex;
+    flex-direction: column;
+    /*flex-grow: 1;*/
+    height: 100%;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.client_container {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.side_bar_left {
+    background: #282a29;
+    height: 902px;
+    width: 70px;
+}
+
+.logo_wrapper img, i {
+    max-width: 52px;
+    max-height: 120px;
+    /*padding: 3px;*/
+    margin: 7px;
+    border-radius: 3px;
+}
+
+.client_channels_list_container {
+    /*position: relative;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*flex-basis: 220px;*/
+    /*flex-shrink: 0;*/
+    /*min-width: 1px;*/
+    /*max-width: 260px;*/
+    background: #4D394B;
+    /*z-index: 201;*/
+    /*box-sizing: content-box;*/
+    /*visibility: visible;*/
+    width: 220px;
+    height: 902px;
+}
+
+.client_main_container {
+    /*position: relative;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*flex-grow: 1;*/
+    /*min-width: 1px;*/
+    width: 1620px;
+    height: 902px;
+    background-color: #2a80b9;
+}
+
+.client_main_container_header {
+    height: 60px;
+    width: 1620px;
+    background-color: cyan;
+}
+
+.client_main_container_body {
+    height: 902px;
+    width: 1620px;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+}
+.client_main_container_main {
+    height: 902px;
+    width: 1120px;
+    background-color: #2ab27b;
+}.client_main_container_aside {
+    height: 902px;
+    width: 500px;
+    background-color: #7D60C5;
+}
