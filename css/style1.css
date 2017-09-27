@@ -23,8 +23,9 @@ body {
 #client-ui {
     display: flex;
     flex-direction: column;
-    /*flex-grow: 1;*/
+    flex-grow: 1;
     height: 100%;
+    width: 100%;
 }
 
 .container-fluid {
@@ -45,11 +46,18 @@ body {
 }
 
 .logo_wrapper img, i {
-    max-width: 52px;
+    max-width: 40px;
     max-height: 120px;
     /*padding: 3px;*/
-    margin: 7px;
+    margin: 10px;
     border-radius: 3px;
+}
+i.online {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #99D04A;
 }
 
 .client_channels_list_container {
@@ -60,12 +68,19 @@ body {
     /*flex-shrink: 0;*/
     /*min-width: 1px;*/
     /*max-width: 260px;*/
-    background: #4D394B;
     /*z-index: 201;*/
     /*box-sizing: content-box;*/
     /*visibility: visible;*/
     width: 220px;
     height: 902px;
+    background: #4f5452;
+}
+.client_channels_list_container ul li{
+    list-style: none;
+    color:#bbbfbe;
+    margin-left:15px;
+    padding-bottom:7px;
+    font-size: 18px;
 }
 
 .client_main_container {
@@ -92,11 +107,24 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
 .client_main_container_main {
     height: 902px;
     width: 1120px;
     background-color: #2ab27b;
-}.client_main_container_aside {
+}
+.client_main_container_posts {
+    height: 800px;
+    width: 1120px;
+    background-color: #7F7F83;
+}
+.client_main_container_main_input {
+    height: 80px;
+    width: 1120px;
+    background-color: #36a64f;
+}
+
+.client_main_container_aside {
     height: 902px;
     width: 500px;
     background-color: #7D60C5;
