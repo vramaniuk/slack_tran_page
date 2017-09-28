@@ -56,7 +56,9 @@ i.online {
     border-radius: 5px;
     background: #99D04A;
 }
-
+i.fa-plus-circle {
+    float: right;
+}
 .client_channels_list_container {
     /*position: relative;*/
     /*display: flex;*/
@@ -76,8 +78,9 @@ i.online {
     list-style: none;
     color:#bbbfbe;
     margin-left:15px;
-    padding-bottom:7px;
-    font-size: 18px;
+    margin-bottom: 5px;
+    /*padding-bottom:7px;*/
+    font-size: 16px;
 }
 
 .client_main_container {
