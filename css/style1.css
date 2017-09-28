@@ -1,4 +1,4 @@
-* {
+*, ::before, ::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -13,10 +13,6 @@ body {
     font-family: 'lucida-grande', sans-serif;
 }
 
-/*.feature_name_tagging_client light_theme {*/
-/*font-family: 'lucida-grande', sans-serif;*/
-/*}*/
-
 #client-ui {
     display: flex;
     /*flex-direction: column;*/
@@ -25,11 +21,6 @@ body {
     width: 100%;
     overflow: hidden;
 }
-
-/*.container-fluid {*/
-/*padding-right: 0;*/
-/*padding-left: 0;*/
-/*}*/
 
 .side_bar_left {
     background: #282a29;
@@ -51,6 +42,11 @@ body {
     color: grey
 }
 
+/*li  {*/
+    /*display: flex;*/
+    /*align-items: center;*/
+/*}*/
+
 i.online {
     display: inline-block;
     width: 10px;
@@ -63,21 +59,15 @@ i.fa-plus-circle {
     float: right;
 }
 
+p i.fa.fa-bars.fa-2x {
+    color: grey;
+}
+
 .client_channels_list_container {
-    /*position: relative;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*flex-basis: 220px;*/
-    /*flex-shrink: 0;*/
-    /*min-width: 1px;*/
-    /*max-width: 260px;*/
-    /*z-index: 201;*/
-    /*box-sizing: content-box;*/
-    /*visibility: visible;*/
     min-width: 220px;
     height: auto;
     background: #4f5452;
-    overflow:auto;
+    overflow: auto;
 }
 
 .client_channels_list_container ul li {
@@ -85,16 +75,12 @@ i.fa-plus-circle {
     color: #bbbfbe;
     margin-left: 15px;
     margin-bottom: 5px;
-    /*padding-bottom:7px;*/
     font-size: 14px;
 }
 
 .client_main_container {
-    /*position: relative;*/
     display: flex;
     flex-direction: column;
-    /*flex-grow: 1;*/
-    /*min-width: 1px;*/
     width: 1620px;
     height: auto;
     background-color: #2a80b9;
@@ -114,12 +100,10 @@ i.fa-plus-circle {
     /*flex-wrap: wrap;*/
 }
 
-
-
 .client_main_container_main {
     /*flex-grow: 3;*/
-    /*display:flex;*/
-    /*flex-direction: row;*/
+    display: flex;
+    flex-direction: column;
     height: auto;
     width: 1120px;
     background-color: #b220a1;
@@ -132,10 +116,20 @@ i.fa-plus-circle {
     background-color: #7F7F83;
 }
 
-.client_main_container_main_input {
-    height: 80px;
-    width: 1120px;
-    background-color: #36a64f;
+.client_main_container_main_input_wrapper {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid grey
+}
+
+#main_input {
+    width: 1000px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+    border: none;
 }
 
 .client_main_container_aside {
@@ -143,3 +137,7 @@ i.fa-plus-circle {
     min-width: 500px;
     background-color: #7D60C5;
 }
+
+/*.client_main_container_main_input i{*/
+/*float:left;*/
+/*}*/
