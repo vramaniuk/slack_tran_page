@@ -42,10 +42,31 @@ body {
     color: grey
 }
 
-/*li  {*/
-    /*display: flex;*/
-    /*align-items: center;*/
-/*}*/
+ul:first-child {
+    color: #fff
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+#ais {
+    color: grey;
+    margin-left: 120px;
+}
+
+i.fa.fa-angle-down.fa-7x {
+    color: grey;
+}
+
+i.fa.fa-plus-circle {
+    margin-left: 70px;
+}
+
+.ch_m {
+    margin-left: 110px;
+}
 
 i.online {
     display: inline-block;
@@ -55,9 +76,9 @@ i.online {
     background: #99D04A;
 }
 
-i.fa-plus-circle {
-    float: right;
-}
+/*i.fa-plus-circle {*/
+/*float: right;*/
+/*}*/
 
 p i.fa.fa-bars.fa-2x {
     color: grey;
@@ -121,7 +142,9 @@ p i.fa.fa-bars.fa-2x {
     width: 100%;
     background-color: #fff;
     border-radius: 5px;
-    border: 1px solid grey
+    border: 2px solid lightgrey;
+    display: flex;
+    align-items: center;
 }
 
 #main_input {

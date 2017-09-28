@@ -10,83 +10,84 @@
 <body>
 <div id="client-ui" class="container-fluid sidebar_theme_default flex_pane_showing">
 
-        <div class="side_bar_left">
-            <div class="logo_wrapper">
-                <figure><i class="fa fa-plus-square fa-3x"
-                           aria-hidden="true"></i>
-                    <figcaption>Ctrl+1</figcaption>
-                </figure>
-            </div>
-            <div class="logo_wrapper">
-                <figure><img src="./images/ais_logo.jpg" alt="">
-                    <figcaption>Ctrl+2</figcaption>
-                </figure>
-            </div>
-            <div class="logo_wrapper">
-                <figure><img src="./images/rolling_scopes.png" alt="">
-                    <figcaption>Ctrl+3</figcaption>
-                </figure>
-            </div>
-
-            <div class="logo_wrapper">
-                <i class="fa fa-plus-square fa-3x"
-                   aria-hidden="true"></i>
-            </div>
+    <div class="side_bar_left">
+        <div class="logo_wrapper">
+            <figure><i class="fa fa-plus-square fa-3x"
+                       aria-hidden="true"></i>
+                <figcaption>Ctrl+1</figcaption>
+            </figure>
         </div>
-        <div class="client_channels_list_container">
-            <ul>
-                <li>AIS<i style="color:grey;" class="fa fa-angle-down fa-7x" aria-hidden="true"></i>
-                    <i style="color:grey;float:right;flex:1" class="fa fa-bell-o fa-7x"
-                       aria-hidden="true"></i></li>
-                <li style="clear: right"><i style="float: left" class="online"></i><span>Ilya
+        <div class="logo_wrapper">
+            <figure><img src="./images/ais_logo.jpg" alt="">
+                <figcaption>Ctrl+2</figcaption>
+            </figure>
+        </div>
+        <div class="logo_wrapper">
+            <figure><img src="./images/rolling_scopes.png" alt="">
+                <figcaption>Ctrl+3</figcaption>
+            </figure>
+        </div>
+
+        <div class="logo_wrapper">
+            <i class="fa fa-plus-square fa-3x"
+               aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="client_channels_list_container">
+        <ul>
+            <li>AIS<i class="fa fa-angle-down fa-7x" aria-hidden="true"></i>
+                <i id="ais" class="fa fa-bell-o fa-7x"
+                   aria-hidden="true"></i></li>
+            <li><i class="online"></i><span>Ilya
                     Mokin</span></li>
 
-                <li><i style="color:grey;" class="fa fa-commenting-o" aria-hidden="true"></i>All
-                    Threads
-                </li>
-                <li>Channels<i class="fa fa-plus-circle"></i></li>
-                <li><i class="channel-status fa fa-lock"></i>admins</li>
-                <li><i class="channel-status fa fa-hashtag"></i>books</li>
-                <li><i class="channel-status fa fa-hashtag"></i>english</li>
-                <li><i class="channel-status fa fa-hashtag"></i>general</li>
-                <li><i class="channel-status fa fa-hashtag"></i>net</li>
-                <li><i class="channel-status fa fa-hashtag"></i>nodejs</li>
-                <li><i class="channel-status fa fa-lock"></i>pre_study</li>
-                <li><i class="channel-status fa fa-hashtag"></i>rundom</li>
-                <li><i class="channel-status fa fa-hashtag"></i>study</li>
-                <li>Direct Messages<i class="fa fa-plus-circle"></i></li>
-                <li><i class="fa fa-heart"></i>slack bot</li>
-                <li><i class="online"></i>Ilya Mokin (you)</li>
-                <li><i class="online"></i>Alexey Novik</li>
-                <li><i class="online"></i>Alexander Mokin</li>
-                <li><i class="offline fa fa-circle-o"></i>Alexey Radkovich</li>
-                <li><i class="online"></i>Andrey Likhtar</li>
-                <li><i class="online"></i>Danil Fedorov</li>
-                <li><i class="offline fa fa-circle-o"></i>Maksim Sarvas</li>
-                <li><i class="online"></i>Nastya Myalik</li>
-                <li><i class="online"></i>Sergey Dubovich</li>
-                <li><i class="online"></i>Slava Peshko</li>
-                <li><i class="online"></i>Vadim Semenyk</li>
-                <li><i class="offline fa fa-circle-o"></i>Viktar Ramaniuk</li>
-                <li><i class="online"></i>Yuri Zvirblis</li>
-                <li><i class="fa fa-plus" aria-hidden="true"></i>Invite People</li>
-                <li>Apps<i class="fa fa-plus-circle"></i></li>
-            </ul>
-            <p><i class="fa fa-bars fa-2x" aria-hidden="true"></i></p>
-        </div>
-        <div class="client_main_container">
-            <div class="client_main_container_header"></div>
-            <div class="client_main_container_body">
-                <div class="client_main_container_main">
-                    <div class="client_main_container_posts"></div>
-                    <div class="client_main_container_main_input_wrapper">
-                        <i class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i> <input type="text" id="main_input">
-                    </div>
+            <li><i class="fa fa-commenting-o" aria-hidden="true"></i>All
+                Threads
+            </li>
+            <li>Channels<i class="fa fa-plus-circle chanel ch_m"></i></li>
+            <li><i class="channel-status fa fa-lock"></i>admins</li>
+            <li><i class="channel-status fa fa-hashtag"></i>books</li>
+            <li><i class="channel-status fa fa-hashtag"></i>english</li>
+            <li><i class="channel-status fa fa-hashtag"></i>general</li>
+            <li><i class="channel-status fa fa-hashtag"></i>net</li>
+            <li><i class="channel-status fa fa-hashtag"></i>nodejs</li>
+            <li><i class="channel-status fa fa-lock"></i>pre_study</li>
+            <li><i class="channel-status fa fa-hashtag"></i>rundom</li>
+            <li><i class="channel-status fa fa-hashtag"></i>study</li>
+            <li>Direct Messages<i class="fa fa-plus-circle"></i></li>
+            <li><i class="fa fa-heart"></i>slack bot</li>
+            <li><i class="online"></i>Ilya Mokin (you)</li>
+            <li><i class="online"></i>Alexey Novik</li>
+            <li><i class="online"></i>Alexander Mokin</li>
+            <li><i class="offline fa fa-circle-o"></i>Alexey Radkovich</li>
+            <li><i class="online"></i>Andrey Likhtar</li>
+            <li><i class="online"></i>Danil Fedorov</li>
+            <li><i class="offline fa fa-circle-o"></i>Maksim Sarvas</li>
+            <li><i class="online"></i>Nastya Myalik</li>
+            <li><i class="online"></i>Sergey Dubovich</li>
+            <li><i class="online"></i>Slava Peshko</li>
+            <li><i class="online"></i>Vadim Semenyk</li>
+            <li><i class="offline fa fa-circle-o"></i>Viktar Ramaniuk</li>
+            <li><i class="online"></i>Yuri Zvirblis</li>
+            <li><i class="fa fa-plus" aria-hidden="true"></i>Invite People</li>
+            <li>Apps<i class="fa fa-plus-circle"></i></li>
+        </ul>
+        <p><i class="fa fa-bars fa-2x" aria-hidden="true"></i></p>
+    </div>
+    <div class="client_main_container">
+        <div class="client_main_container_header"></div>
+        <div class="client_main_container_body">
+            <div class="client_main_container_main">
+                <div class="client_main_container_posts"></div>
+                <div class="client_main_container_main_input_wrapper">
+                    <i class="fa fa-plus-square-o fa-2x" aria-hidden="true"></i> <input type="text" id="main_input"
+                                                                                        placeholder="Message #study">
                 </div>
-                <div class="client_main_container_aside"></div>
             </div>
-
+            <div class="client_main_container_aside"></div>
         </div>
+
+    </div>
 </div>
 
 </body>
