@@ -15,8 +15,6 @@ body {
 
 #client-ui {
     display: flex;
-    /*flex-direction: column;*/
-    /*flex-grow: 1;*/
     height: 100vh;
     width: 100%;
     justify-content: space-around;
@@ -59,7 +57,7 @@ i.fa.fa-angle-down.fa-7x {
 }
 
 i.fa.fa-plus-circle {
-    margin-left: 70px;
+    margin-left: 63px;
 }
 
 .client_channels_list_container ul li .c_m {
@@ -67,7 +65,7 @@ i.fa.fa-plus-circle {
 }
 
 .client_channels_list_container ul li .a_m {
-    margin-left: 145px;
+    margin-left: 135px;
 }
 
 .client_channels_list_container .bar_m {
@@ -157,5 +155,5 @@ p i.fa.fa-bars.fa-2x {
 .client_main_container_aside {
     height: auto;
     min-width: 500px;
-    background-color: #7D60C5;
+    background-color: darkgrey;
 }
