@@ -52,12 +52,7 @@ a,li {
     background-color: #7F7F83;
 }
 #ais {
-    color: grey;
     margin-left: 120px;
-}
-
-i.fa.fa-angle-down.fa-7x {
-    color: grey;
 }
 
 i.fa.fa-plus-circle {
@@ -172,6 +167,7 @@ p i.fa.fa-bars.fa-2x {
     font-size: 17px;
     font-weight: 900;
     display: flex;
+    color:grey;
 }
 #right input {
     width: 300px;
@@ -182,4 +178,7 @@ p i.fa.fa-bars.fa-2x {
     outline: none;
     height: 30px;
     color: black;
+}
+i.fa{
+    color:grey;
 }
