@@ -64,8 +64,14 @@ i.fa.fa-plus-circle {
     margin-left: 70px;
 }
 
-.ch_m {
-    margin-left: 110px;
+.client_channels_list_container ul li .c_m {
+    margin-left: 114px;
+}
+.client_channels_list_container ul li .a_m {
+    margin-left: 145px;
+}
+.client_channels_list_container .bar_m {
+    margin-left: 90px;
 }
 
 i.online {
