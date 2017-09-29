@@ -224,11 +224,11 @@ i.fa {
 .client_main_container_posts {
     margin-left: 0;
     max-width: 1000px;
-    height: 800px;
+    height: auto;
     /*position: relative;*/
-    overflow: visible;
+    overflow: auto;
     display: flex;
-    align-items: flex-end;
+    /*align-items: flex-end;*/
     flex-direction: column;
     box-shadow: inset 1px 0 0 0 #e8e8e8;
 }
@@ -251,7 +251,7 @@ i.fa {
     /*user-select: text;*/
     /*word-wrap: break-word;*/
     /*padding: 1px 40px 2px 0;*/
-
+    height: auto;
     margin: 0 0 50px 10px;
     display: flex;
 }
