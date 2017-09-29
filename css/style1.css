@@ -48,10 +48,12 @@ a, li {
 li:hover {
     background-color: #7F7F83;
 }
-p i.fa.fa-bars.fa-2x.bar_m:hover{
+
+p i.fa.fa-bars.fa-2x.bar_m:hover {
     transform: scale(1.2);
-    color:#fff
+    color: #fff
 }
+
 #ais {
     margin-left: 120px;
 }
@@ -86,9 +88,28 @@ p i.fa.fa-bars.fa-2x {
 
 .client_channels_list_container {
     min-width: 220px;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-end;*/
+    height: 100%;
     background: #4f5452;
-    overflow: auto;
+    /*position: relative;*/
+    overflow-y: hidden;
+}
+
+.client_channels_list_container:hover {
+    overflow-y: scroll;
+}
+
+.bottom_bar {
+    /*position: absolute;*/
+    /*bottom: -450px;*/
+    width: 100px;
+    height: 50px;
+}
+
+.for_m {
+    /*margin-bottom: 100px;*/
 }
 
 .client_channels_list_container ul li {
@@ -107,7 +128,6 @@ p i.fa.fa-bars.fa-2x {
     /*background-color: #2a80b9;*/
 }
 
-
 .client_main_container_main {
     display: flex;
     flex-direction: column;
@@ -120,9 +140,11 @@ p i.fa.fa-bars.fa-2x {
     display: flex;
     width: 100%;
 }
-.outer_wrapper{
-    padding:10px;
+
+.outer_wrapper {
+    padding: 10px;
 }
+
 .client_main_container_main_input_wrapper {
     height: 46px;
     width: 100%;
