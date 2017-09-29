@@ -17,7 +17,7 @@ body {
     display: flex;
     height: 100vh;
     width: 100%;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     /*overflow: hidden;*/
 }
 
@@ -48,7 +48,10 @@ a, li {
 li:hover {
     background-color: #7F7F83;
 }
-
+p i.fa.fa-bars.fa-2x.bar_m:hover{
+    transform: scale(1.2);
+    color:#fff
+}
 #ais {
     margin-left: 120px;
 }
@@ -104,31 +107,24 @@ p i.fa.fa-bars.fa-2x {
     /*background-color: #2a80b9;*/
 }
 
-/*.client_main_container_header {*/
-/*min-height: 50px;*/
-/*width: auto;*/
-/*background-color: #62a6ff;*/
-/*}*/
 
 .client_main_container_main {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
+    border-right: 2px solid lightgrey;
 }
 
 .client_main_container_body {
-    background-color: grey;
     display: flex;
+    width: 100%;
 }
-
-.client_main_container_posts {
-    height: 800px;
-    background-color: #7F7F83;
+.outer_wrapper{
+    padding:10px;
 }
-
 .client_main_container_main_input_wrapper {
-    height: 56px;
+    height: 46px;
     width: 100%;
     background-color: #fff;
     border-radius: 5px;
@@ -139,11 +135,11 @@ p i.fa.fa-bars.fa-2x {
 
 #main_input {
     width: 100%;
-    height: 55px;
-    /*margin: 5px 0;*/
+    height: 42px;
     border: none;
-    border-left: 2px solid grey;
+    border-left: 2px solid lightgrey;
     font-size: 20px;
+    padding: 5px;
 }
 
 /* header*/
@@ -199,4 +195,53 @@ i.fa {
     border-bottom: 1px solid lightgray;
     padding: 22px 0 22px 10px;
     opacity: 0.7;
+}
+
+/*posts*/
+
+.client_main_container_posts {
+    margin-left: 0;
+    max-width: 1000px;
+    height: 800px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    box-shadow: inset 1px 0 0 0 #e8e8e8;
+}
+
+.post {
+    display: block;
+    width: 100%;
+    margin: 0 auto -.0625rem;
+    position: relative;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    color: #2c2d30;
+    font-size: 15px;
+    line-height: 22px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    word-wrap: break-word;
+    padding: 1px 40px 2px 0;
+}
+
+.avatar {
+
+}
+
+.title {
+
+}
+
+.time {
+
+}
+
+.messageText {
+
 }
