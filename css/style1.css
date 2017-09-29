@@ -164,6 +164,18 @@ p i.fa.fa-bars.fa-2x {
     padding: 5px;
 }
 
+a i.fa {
+    font-size: 1.3em;
+}
+a i.fa.fa-at:hover {
+    transform: scale(1.2);
+    color: #1c92ff;
+}
+a i.fa.fa-smile-o:hover {
+    transform: scale(1.2);
+    color: #ffbc37;
+}
+
 /* header*/
 
 #channelHeader {
