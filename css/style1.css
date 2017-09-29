@@ -29,9 +29,6 @@ body {
 }
 
 .logo_wrapper img, i {
-    /*max-width: 40px;*/
-    /*max-height: 120px;*/
-    /*padding: 3px;*/
     margin: 10px;
     border-radius: 3px;
 }
@@ -41,16 +38,17 @@ body {
     color: grey
 }
 
-
-a,li {
+a, li {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color:#bbbfbe;
+    color: #bbbfbe;
 }
- li:hover{
+
+li:hover {
     background-color: #7F7F83;
 }
+
 #ais {
     margin-left: 120px;
 }
@@ -103,13 +101,13 @@ p i.fa.fa-bars.fa-2x {
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: #2a80b9;
+    /*background-color: #2a80b9;*/
 }
 
 /*.client_main_container_header {*/
-    /*min-height: 50px;*/
-    /*width: auto;*/
-    /*background-color: #62a6ff;*/
+/*min-height: 50px;*/
+/*width: auto;*/
+/*background-color: #62a6ff;*/
 /*}*/
 
 .client_main_container_main {
@@ -117,7 +115,6 @@ p i.fa.fa-bars.fa-2x {
     flex-direction: column;
     height: auto;
     width: 100%;
-    background-color: #b220a1;
 }
 
 .client_main_container_body {
@@ -149,26 +146,23 @@ p i.fa.fa-bars.fa-2x {
     font-size: 20px;
 }
 
-.client_main_container_aside {
-    height: auto;
-    min-width: 500px;
-    background-color: darkgrey;
-}
-/**/
+/* header*/
+
 #channelHeader {
-    height: 5%;
     background: white;
     display: flex;
     padding-left: 20px;
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
 }
+
 #channelName {
     font-size: 17px;
     font-weight: 900;
     display: flex;
-    color:grey;
+    color: grey;
 }
+
 #right input {
     width: 300px;
     padding-top: 0;
@@ -179,6 +173,30 @@ p i.fa.fa-bars.fa-2x {
     height: 30px;
     color: black;
 }
-i.fa{
-    color:grey;
+
+i.fa {
+    color: grey;
+}
+
+/*aside right*/
+
+.client_main_container_aside {
+    height: auto;
+    min-width: 500px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.details:first-child {
+    background: #f9f9f9;
+    font-weight: 900;
+}
+
+.details {
+    width: 100%;
+    font-size: 16px;
+    border-bottom: 1px solid lightgray;
+    padding: 22px 0 22px 10px;
+    opacity: 0.7;
 }
