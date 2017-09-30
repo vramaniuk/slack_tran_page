@@ -17,8 +17,6 @@ body {
     display: flex;
     height: 100vh;
     width: 100%;
-    /*justify-content: space-around;*/
-    /*overflow: hidden;*/
 }
 
 .side_bar_left {
@@ -87,29 +85,28 @@ p i.fa.fa-bars.fa-2x {
 }
 
 .client_channels_list_container {
-    min-width: 220px;
+    min-width: 222px;
     display: flex;
     flex-direction: column;
-    /*align-items: flex-end;*/
-    height: 100%;
+    height: auto;
     background: #4f5452;
-    /*position: relative;*/
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
-.client_channels_list_container:hover {
+.users_container {
+    height: 100vh;
+    overflow-y: hidden;
+    /*overflow-x: hidden;*/
+}
+
+.users_container:hover {
     overflow-y: scroll;
+    /*overflow-x: hidden;*/
 }
 
 .bottom_bar {
-    /*position: absolute;*/
-    /*bottom: -450px;*/
-    width: 100px;
+    width: 100%;
     height: 50px;
-}
-
-.for_m {
-    /*margin-bottom: 100px;*/
 }
 
 .client_channels_list_container ul li {
@@ -125,7 +122,6 @@ p i.fa.fa-bars.fa-2x {
     flex-direction: column;
     width: 100%;
     height: auto;
-    /*background-color: #2a80b9;*/
 }
 
 .client_main_container_main {
@@ -167,13 +163,20 @@ p i.fa.fa-bars.fa-2x {
 a i.fa {
     font-size: 1.3em;
 }
-a i.fa.fa-at:hover {
+
+i.fa.fa-at:hover {
     transform: scale(1.2);
     color: #1c92ff;
 }
+
 a i.fa.fa-smile-o:hover {
     transform: scale(1.2);
     color: #ffbc37;
+}
+
+i.fa.fa-star-o.fa-lg.gold:hover {
+    color: orange;
+    transform: scale(1.2);
 }
 
 /* header*/
@@ -194,7 +197,7 @@ a i.fa.fa-smile-o:hover {
 }
 
 #right input {
-    width: 300px;
+    width: 200px;
     padding-top: 0;
     border: 1px solid #cccccc;
     border-radius: 5px;
@@ -202,6 +205,10 @@ a i.fa.fa-smile-o:hover {
     outline: none;
     height: 30px;
     color: black;
+}
+
+#right input:focus {
+    width: 280px;
 }
 
 i.fa {
@@ -212,7 +219,7 @@ i.fa {
 
 .client_main_container_aside {
     height: auto;
-    min-width: 500px;
+    min-width: 350px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -221,6 +228,7 @@ i.fa {
 .details:first-child {
     background: #f9f9f9;
     font-weight: 900;
+    color: #000;
 }
 
 .details {
@@ -236,33 +244,17 @@ i.fa {
 .client_main_container_posts {
     margin-left: 0;
     max-width: 1000px;
-    height: auto;
-    /*position: relative;*/
-    overflow: auto;
-    display: flex;
-    /*align-items: flex-end;*/
-    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
     box-shadow: inset 1px 0 0 0 #e8e8e8;
 }
 
 .post {
-    /*display: block;*/
     width: 100%;
-    /*margin: 0 auto -.0625rem;*/
-    /*position: relative;*/
-    /*border-left: none;*/
-    /*border-right: none;*/
-    /*border-top: 1px solid transparent;*/
-    /*border-bottom: 1px solid transparent;*/
     color: #2c2d30;
     font-size: 15px;
     line-height: 22px;
-    /*-webkit-user-select: text;*/
-    /*-moz-user-select: text;*/
-    /*-ms-user-select: text;*/
-    /*user-select: text;*/
-    /*word-wrap: break-word;*/
-    /*padding: 1px 40px 2px 0;*/
     height: auto;
     margin: 0 0 50px 10px;
     display: flex;
@@ -291,7 +283,4 @@ i.fa {
     color: grey;
 }
 
-.messageText {
-
-}
 
