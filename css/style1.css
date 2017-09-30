@@ -48,7 +48,6 @@ li:hover {
 }
 
 p i.fa.fa-bars.fa-2x.bar_m:hover {
-    transform: scale(1.2);
     color: #fff
 }
 
@@ -74,9 +73,9 @@ i.fa.fa-plus-circle {
 
 i.online {
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
     background: #99D04A;
 }
 
@@ -113,7 +112,7 @@ p i.fa.fa-bars.fa-2x {
     list-style: none;
     color: #bbbfbe;
     margin-left: 15px;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
     font-size: 14px;
 }
 
@@ -160,23 +159,27 @@ p i.fa.fa-bars.fa-2x {
     padding: 5px;
 }
 
-a i.fa {
-    font-size: 1.3em;
+#right i.fa.fa-at.fa-lg.red:hover {
+    color: #d72b3f;
 }
 
-i.fa.fa-at:hover {
-    transform: scale(1.2);
+i.fa.fa-at, i.fa-smile-o, i.fa.fa-at.fa-lg.red, i.fa.fa-star-o.fa-lg.gold, i.fa-ellipsis-v.fa-lg.blue {
+    font-size: 1.3em;
+    transition: all 0.1s ease-out;
+}
+
+.client_main_container_main_input_wrapper i.fa.fa-at:hover {
+    transform: scale(1.3);
     color: #1c92ff;
 }
 
 a i.fa.fa-smile-o:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
     color: #ffbc37;
 }
 
 i.fa.fa-star-o.fa-lg.gold:hover {
     color: orange;
-    transform: scale(1.2);
 }
 
 /* header*/
@@ -205,6 +208,7 @@ i.fa.fa-star-o.fa-lg.gold:hover {
     outline: none;
     height: 30px;
     color: black;
+    transition: width 0.5s ease-out;
 }
 
 #right input:focus {
@@ -256,7 +260,8 @@ i.fa {
     font-size: 15px;
     line-height: 22px;
     height: auto;
-    margin: 0 0 50px 10px;
+    margin-bottom: 8px;
+    padding-right: 50px;
     display: flex;
 }
 
