@@ -36,6 +36,16 @@ body {
     color: grey
 }
 
+.client_list_header {
+    color: #bbbfbe;
+}
+
+.page_user {
+    margin: -10px 0 14px 14px;
+    display: flex;
+    align-items: center;
+}
+
 a, li {
     display: flex;
     align-items: center;
@@ -52,7 +62,7 @@ p i.fa.fa-bars.fa-2x.bar_m:hover {
 }
 
 #ais {
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 i.fa.fa-plus-circle {
@@ -112,8 +122,12 @@ p i.fa.fa-bars.fa-2x {
     list-style: none;
     color: #bbbfbe;
     margin-left: 15px;
-    /*margin-bottom: 5px;*/
     font-size: 14px;
+    height: 25px;
+}
+
+.client_list_header span {
+    margin-left: 14px;
 }
 
 .client_main_container {
@@ -180,6 +194,10 @@ a i.fa.fa-smile-o:hover {
 
 i.fa.fa-star-o.fa-lg.gold:hover {
     color: orange;
+}
+
+i.fa.fa-ellipsis-v.fa-lg.blue:hover {
+    color: #0576B9;
 }
 
 /* header*/
