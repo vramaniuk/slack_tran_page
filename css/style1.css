@@ -93,6 +93,10 @@ i.online {
     background: #99D04A;
 }
 
+.fa-lock {
+    margin-left: 13px;
+}
+
 p i.fa.fa-bars.fa-2x {
     color: grey;
 }
@@ -113,7 +117,7 @@ p i.fa.fa-bars.fa-2x {
 }
 
 .users_container:hover {
-    overflow-y: scroll;
+    overflow-y: auto;
     /*overflow-x: hidden;*/
 }
 
@@ -132,7 +136,7 @@ p i.fa.fa-bars.fa-2x {
 
 .client_list_header span {
     margin-left: 14px;
-    color:#fff;
+    color: #fff;
 }
 
 .client_main_container {
@@ -204,9 +208,11 @@ i.fa.fa-star-o.fa-lg.gold:hover {
 i.fa.fa-ellipsis-v.fa-lg.blue:hover {
     color: #0576B9;
 }
- li.list_title a:hover {
-    color:#fff;
+
+li.list_title a:hover {
+    color: #fff;
 }
+
 /* header*/
 
 #channelHeader {
@@ -306,8 +312,9 @@ i.fa {
 
 .title a {
     font-weight: bold;
-    color:#000;
+    color: #000;
 }
+
 .title a:hover {
     text-decoration: underline;
 }
@@ -316,8 +323,9 @@ i.fa {
     margin-left: 10px;
     color: grey;
 }
-.message_text{
-    max-width: 100vw;
+
+.message_text {
+    max-width: inherit;
 }
 
 
