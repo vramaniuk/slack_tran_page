@@ -9,13 +9,19 @@
     src: url('../fonts/ufonts.com_lucida-grande.ttf');
 }
 
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     font-family: 'lucida-grande', sans-serif;
+    height: 100%;
 }
 
 #client-ui {
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -111,7 +117,7 @@ p i.fa.fa-bars.fa-2x {
 }
 
 .users_container {
-    height: 100vh;
+    height: 100%;
     overflow-y: hidden;
     /*overflow-x: hidden;*/
 }
@@ -149,14 +155,17 @@ p i.fa.fa-bars.fa-2x {
 .client_main_container_main {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100%;
     width: 100%;
     border-right: 2px solid lightgrey;
+    position: relative;
 }
 
 .client_main_container_body {
     display: flex;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .outer_wrapper {
@@ -280,7 +289,7 @@ i.fa {
 .client_main_container_posts {
     margin-left: 0;
     /*max-width: 1000px;*/
-    height: 100vh;
+    height: auto;
     overflow-y: auto;
     overflow-x: hidden;
     box-shadow: inset 1px 0 0 0 #e8e8e8;
@@ -297,7 +306,7 @@ i.fa {
     display: flex;
 }
 
-.avatar img{
+.avatar img {
     border-radius: 4px;
     margin: 5px 0 0 20px;
 }
@@ -369,7 +378,7 @@ DETAILS[open] SUMMARY ~ * {
     }
 }
 
-.details img{
+.details img {
     border-radius: 3px;
     margin-right: 5px;
 }
