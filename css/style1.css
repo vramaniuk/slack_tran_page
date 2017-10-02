@@ -4,10 +4,10 @@
     margin: 0;
 }
 
-@font-face {
-    font-family: 'lucida-grande';
-    src: url('../fonts/ufonts.com_lucida-grande.ttf');
-}
+/*@font-face {*/
+/*font-family: 'lucida-grande';*/
+/*src: url('../fonts/ufonts.com_lucida-grande.ttf');*/
+/*}*/
 
 html {
     height: 100%;
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'lucida-grande', sans-serif;
+    font-family: Slack-Lato, appleLogo, sans-serif;
     height: 100%;
 }
 
@@ -340,7 +340,7 @@ i.fa {
 
 /*details*/
 
-.details a, li {
+.not_visible ul li a {
     color: #000;
     margin-bottom: 5px;
 }
