@@ -72,7 +72,7 @@ p i.fa.fa-bars.fa-2x.bar_m:hover {
 }
 
 i.fa.fa-plus-circle {
-    margin-left: 60px;
+    margin-left: 52px;
 }
 
 .client_channels_list_container ul li .c_m {
@@ -136,7 +136,8 @@ p i.fa.fa-bars.fa-2x {
     list-style: none;
     color: #bbbfbe;
     margin-left: 15px;
-    font-size: 14px;
+    font-size: 16px;
+    line-height:26px;
     height: 25px;
 }
 
