@@ -5,8 +5,8 @@
 }
 
 @font-face {
-font-family: 'Slack-Lato';
-src: url('../fonts/Slack-Lato.ttf');
+    font-family: 'Slack-Lato';
+    src: url('../fonts/Slack-Lato.ttf');
 }
 
 html {
@@ -137,7 +137,7 @@ p i.fa.fa-bars.fa-2x {
     color: #bbbfbe;
     margin-left: 15px;
     font-size: 16px;
-    line-height:26px;
+    line-height: 26px;
     height: 25px;
 }
 
@@ -169,28 +169,54 @@ p i.fa.fa-bars.fa-2x {
     overflow: hidden;
 }
 
+/*main input*/
+
 .outer_wrapper {
+    width: 100%;
     padding: 10px;
+    position: relative;
 }
 
 .client_main_container_main_input_wrapper {
-    height: 46px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 2px solid lightgrey;
+    width: 98%;
+    height: auto;
     display: flex;
-    align-items: center;
+    border: 2px solid #A0A0A2;
+    border-radius: 8px;
+    position: relative;
 }
 
-#main_input {
-    width: 100%;
-    height: 42px;
-    border: none;
-    border-left: 2px solid lightgrey;
-    font-size: 20px;
-    padding: 5px;
+.main_input {
+    width: 90%;
+    max-width: 1200px;
+    max-height: 70px;
+    overflow: auto;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1.15;
 }
+
+.client_main_container_main_input_wrapper .main_input[contentEditable=true]:empty:not(:focus)::before {
+    content: attr(placeholder);
+    color: gray;
+}
+
+.plus {
+    color: #A0A0A2;
+    font-size: 35px;
+    padding: 0 10px;
+    border-right: 2px solid #A0A0A2;
+}
+
+.client_main_container_main_input_wrapper .plus:hover {
+    background: #56B68B;
+    color: #fff;
+    border-color: #29a979;
+    cursor: pointer;
+}
+
+/**********************************/
 
 #right i.fa.fa-at.fa-lg.red:hover {
     color: #d72b3f;
@@ -239,6 +265,8 @@ li.list_title a:hover {
     display: flex;
     color: #000;
 }
+
+/* right input*/
 
 #right input {
     width: 200px;
