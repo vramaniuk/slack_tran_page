@@ -4,10 +4,10 @@
     margin: 0;
 }
 
-/*@font-face {*/
-/*font-family: 'lucida-grande';*/
-/*src: url('../fonts/ufonts.com_lucida-grande.ttf');*/
-/*}*/
+@font-face {
+font-family: 'Slack-Lato';
+src: url('../fonts/Slack-Lato.ttf');
+}
 
 html {
     height: 100%;
