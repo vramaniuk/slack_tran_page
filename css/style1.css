@@ -219,7 +219,13 @@ p i.fa.fa-bars.fa-2x {
     color: #d72b3f;
 }
 
-i.fa.fa-at, i.fa-smile-o, i.fa.fa-at.fa-lg.red, i.fa.fa-star-o.fa-lg.gold, i.fa-ellipsis-v.fa-lg.blue {
+i.fa.fa-at,
+i.fa-smile-o,
+i.fa.fa-at.fa-lg.red,
+i.fa.fa-star-o.fa-lg.gold,
+i.fa-ellipsis-v.fa-lg.blue,
+i.fa.fa-gear.fa-lg.blue,
+i.fa.fa-info-circle.fa-lg.blue {
     font-size: 1.3em;
     transition: all 0.1s ease-out;
 }
@@ -238,7 +244,9 @@ i.fa.fa-star-o.fa-lg.gold:hover {
     color: orange;
 }
 
-i.fa.fa-ellipsis-v.fa-lg.blue:hover {
+i.fa.fa-ellipsis-v.fa-lg.blue:hover,
+i.fa.fa-gear.fa-lg.blue:hover,
+i.fa.fa-info-circle.fa-lg.blue:hover {
     color: #0576B9;
 }
 
@@ -274,7 +282,7 @@ li.list_title a:hover {
     outline: none;
     height: 30px;
     color: black;
-    transition: width 0.5s ease-out;
+    transition: width 0.4s ease-out;
 }
 
 #right input:focus {
@@ -283,6 +291,10 @@ li.list_title a:hover {
 
 i.fa {
     color: grey;
+}
+
+.client_main_container_aside #about .details:hover {
+    opacity: 1;
 }
 
 /*aside right*/
