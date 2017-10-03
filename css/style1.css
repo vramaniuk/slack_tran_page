@@ -27,7 +27,6 @@ body {
 
 .side_bar_left {
     background: #282a29;
-    height: auto;
     min-width: 70px;
     overflow: auto;
 }
@@ -111,7 +110,6 @@ p i.fa.fa-bars.fa-2x {
     min-width: 222px;
     display: flex;
     flex-direction: column;
-    height: auto;
     background: #4f5452;
     overflow: hidden;
 }
@@ -150,7 +148,6 @@ p i.fa.fa-bars.fa-2x {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
 }
 
 .client_main_container_main {
@@ -179,38 +176,38 @@ p i.fa.fa-bars.fa-2x {
 
 .client_main_container_main_input_wrapper {
     width: 98%;
-    height: auto;
     display: flex;
     border: 2px solid #A0A0A2;
     border-radius: 8px;
-    position: relative;
+    /*position: relative;*/
 }
 
 .main_input {
-    width: 90%;
-    max-width: 1200px;
+    /*width: 90%;*/
+    width: 58vw;
     max-height: 70px;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     outline: none;
     font-size: 16px;
     padding: 10px;
     line-height: 1.15;
 }
 
-.client_main_container_main_input_wrapper .main_input[contentEditable=true]:empty:not(:focus)::before {
+.main_input[contentEditable=true]:empty:not(:focus)::before {
     content: attr(placeholder);
     color: gray;
 }
 
 .plus {
-    color: #A0A0A2;
+    color: #a0a0a2;
     font-size: 35px;
     padding: 0 10px;
     border-right: 2px solid #A0A0A2;
 }
 
 .client_main_container_main_input_wrapper .plus:hover {
-    background: #56B68B;
+    background: #56b68b;
     color: #fff;
     border-color: #29a979;
     cursor: pointer;
@@ -291,7 +288,6 @@ i.fa {
 /*aside right*/
 
 .client_main_container_aside {
-    height: auto;
     min-width: 350px;
     background-color: #fff;
     display: flex;
@@ -318,7 +314,6 @@ i.fa {
 .client_main_container_posts {
     margin-left: 0;
     /*max-width: 1000px;*/
-    height: auto;
     overflow-y: auto;
     overflow-x: hidden;
     box-shadow: inset 1px 0 0 0 #e8e8e8;
@@ -329,7 +324,6 @@ i.fa {
     color: #2c2d30;
     font-size: 15px;
     line-height: 22px;
-    height: auto;
     margin-bottom: 8px;
     padding-right: 50px;
     display: flex;
@@ -376,7 +370,7 @@ i.fa {
 
 summary {
     cursor: pointer;
-    margin: 0 0 15px -20px;
+    margin: 0 0 15px -21px;
 }
 
 DETAILS[open] SUMMARY ~ * {
