@@ -71,11 +71,11 @@ p i.fa.fa-bars.fa-2x.bar_m:hover {
 }
 
 i.fa.fa-plus-circle {
-    margin-left: 52px;
+    margin-left: 50px;
 }
 
 .client_channels_list_container ul li .c_m {
-    margin-left: 105px;
+    margin-left: 99px;
 }
 
 .client_channels_list_container ul li .a_m {
@@ -153,6 +153,7 @@ p i.fa.fa-bars.fa-2x {
 .client_main_container_main {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
     border-right: 2px solid lightgrey;
@@ -192,6 +193,12 @@ p i.fa.fa-bars.fa-2x {
     font-size: 16px;
     padding: 10px;
     line-height: 1.15;
+}
+
+@media screen and (max-width: 1280px) {
+    .main_input {
+        width: 38vw;
+    }
 }
 
 .main_input[contentEditable=true]:empty:not(:focus)::before {
@@ -336,7 +343,7 @@ i.fa {
 }
 
 /*.client_main_container_aside #about .details,details[open] .not_visible {*/
-    /*opacity: 1;*/
+/*opacity: 1;*/
 /*}*/
 
 .not_visible ul li a {
