@@ -214,7 +214,7 @@ p i.fa.fa-bars.fa-2x {
 }
 
 /**********************************/
-
+/**/
 #right i.fa.fa-at.fa-lg.red:hover {
     color: #d72b3f;
 }
@@ -269,6 +269,16 @@ li.list_title a:hover {
     font-weight: 900;
     display: flex;
     color: #000;
+}
+#channelInfo{
+    font-size: 0.8em;
+}
+i.fa.fa-star-o.gold:hover {
+    color: #ffbc37;
+}
+
+i.fa.fa-user-o.blue:hover, i.fa.fa-thumb-tack.blue:hover {
+    color: #1c92ff;
 }
 
 /* right input*/
