@@ -90,6 +90,10 @@ i.fa.fa-plus-circle {
     margin-top: 15px;
 }
 
+i.fa.fa-plus-circle:hover {
+    color: #c9c4c9;
+}
+
 i.online {
     display: inline-block;
     width: 12px;
@@ -200,11 +204,13 @@ p i.fa.fa-bars.fa-2x {
         width: 38vw;
     }
 }
-@media screen and (min-width:1281px) and (max-width: 1366px) {
+
+@media screen and (min-width: 1281px) and (max-width: 1366px) {
     .main_input {
         width: 42vw;
     }
 }
+
 .main_input[contentEditable=true]:empty:not(:focus)::before {
     content: attr(placeholder);
     color: gray;
@@ -261,7 +267,7 @@ i.fa.fa-info-circle.fa-lg.blue:hover {
     color: #0576B9;
 }
 
-li.list_title a:hover {
+li.list_title span:hover, i.fa.fa-bell-o.fa-7x:hover {
     color: #fff;
 }
 
@@ -286,7 +292,12 @@ li.list_title a:hover {
     font-size: 0.8em;
 }
 
-i.fa.fa-star-o.gold, i.fa.fa-user-o.blue,i.fa.fa-thumb-tack.blue {
+i.fa.fa-star-o.gold,
+i.fa.fa-user-o.blue,
+i.fa.fa-thumb-tack.blue,
+li.list_title span,
+i.fa.fa-plus-circle,
+i.fa.fa-bell-o.fa-7x {
     transition: all 0.1s ease-out;
 }
 
