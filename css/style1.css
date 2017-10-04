@@ -200,7 +200,11 @@ p i.fa.fa-bars.fa-2x {
         width: 38vw;
     }
 }
-
+@media screen and (min-width:1281px) and (max-width: 1366px) {
+    .main_input {
+        width: 42vw;
+    }
+}
 .main_input[contentEditable=true]:empty:not(:focus)::before {
     content: attr(placeholder);
     color: gray;
@@ -280,6 +284,10 @@ li.list_title a:hover {
 
 #channelInfo {
     font-size: 0.8em;
+}
+
+i.fa.fa-star-o.gold, i.fa.fa-user-o.blue,i.fa.fa-thumb-tack.blue {
+    transition: all 0.1s ease-out;
 }
 
 i.fa.fa-star-o.gold:hover {
