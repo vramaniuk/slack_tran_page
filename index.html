@@ -38,12 +38,10 @@
     </div>
     <div class="client_channels_list_container">
         <div class="client_list_header">
-            <div>
-                <span id="ais">AIS</span>
-                <i class="fa fa-angle-down fa-7x" aria-hidden="true"></i>
-                <div class="hint hint--bottom" data-hint="Notifications">
-                    <i class="fa fa-bell-o fa-7x" aria-hidden="true"></i>
-                </div>
+            <div class="bell_and_angle_wrapper">
+                <div><span id="ais">AIS</span></div>
+                <div id="angle"><i class="fa fa-angle-down fa-7x" aria-hidden="true"></i></div>
+                <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Notifications"><i class="fa fa-bell-o fa-7x" aria-hidden="true"></i></div>
             </div>
             <div class="page_user"><i class="online"></i><span>Ilya Mokin</span></div>
         </div>
@@ -111,10 +109,12 @@
                             <i class="fa fa-star-o gold"></i>
                         </div>
                         <span style="color:grey">|</span>
-                        <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="View member list"><i class="fa fa-user-o blue">14</i>
+                        <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="View member list"><i
+                                class="fa fa-user-o blue">14</i>
                         </div>
                         <span style="color:grey">|</span>
-                        <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="View pinned items"><i class="fa fa-thumb-tack blue">
+                        <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="View pinned items"><i
+                                class="fa fa-thumb-tack blue">
                             21</i></div>
                         <span style="color:grey">|</span>
                         <span id="topic" style="font-style: italic;color:grey">Add a topic</span>
@@ -124,10 +124,12 @@
                 <div id="right">
                     <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Hide channel details"><i
                             class="fa fa-info-circle fa-lg blue"></i></div>
-                    <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Channels Settings"><i class="fa fa-gear fa-lg blue"></i>
+                    <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Channels Settings"><i
+                            class="fa fa-gear fa-lg blue"></i>
                     </div>
                     <input type="search" name="search" placeholder="Search">
-                    <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Show Activity"><i class="fa fa-at fa-lg red"></i></div>
+                    <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Show Activity"><i
+                            class="fa fa-at fa-lg red"></i></div>
                     <div class="hint hint--bottom-left hint--no-animate hint--rounded" data-hint="Show Starred Items"><i
                             class="fa fa-star-o fa-lg gold"></i></div>
                     <div class="hint hint--bottom-left hint--no-animate hint--rounded" data-hint="More Items"><i

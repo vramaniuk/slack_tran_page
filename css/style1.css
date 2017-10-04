@@ -44,7 +44,7 @@ body {
 }
 
 .page_user {
-    margin: -10px 0 14px 14px;
+    margin-left: 15px;
     display: flex;
     align-items: center;
 }
@@ -69,8 +69,15 @@ p i.fa.fa-bars.fa-2x.bar_m:hover {
     color: #fff
 }
 
+.bell_and_angle_wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    /*justify-content: space-between;*/
+}
+
 i.fa.fa-bell-o.fa-7x {
-    margin-left: 100px;
+    /*margin-left: 100px;*/
 }
 
 i.fa.fa-plus-circle {
@@ -91,6 +98,8 @@ i.fa.fa-plus-circle {
 
 #ais {
     color: #fff;
+    font-weight: 600;
+    font-size: large;
 }
 
 .list_title {
@@ -107,6 +116,10 @@ i.fa.fa-plus-circle:hover {
 
 i.fa.fa-angle-down.fa-7x:hover {
     color: #fff;
+}
+
+#angle {
+    width: 131px;
 }
 
 i.online {
@@ -157,7 +170,7 @@ p i.fa.fa-bars.fa-2x {
 }
 
 .client_list_header span {
-    margin-left: 14px;
+    /*margin-left: 14px;*/
 }
 
 .client_main_container {
@@ -398,14 +411,14 @@ DETAILS[open] SUMMARY ~ * {
 }
 
 /*.day_wrapper {*/
-    /*text-align: center;*/
-    /*position:relative;*/
+/*text-align: center;*/
+/*position:relative;*/
 /*}*/
 
 /*.day {*/
-    /*font-weight: 600;*/
-    /*position: absolute;*/
-    /*z-index: 10;*/
+/*font-weight: 600;*/
+/*position: absolute;*/
+/*z-index: 10;*/
 /*}*/
 
 .post {
