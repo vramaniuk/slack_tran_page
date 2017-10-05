@@ -362,7 +362,7 @@ i.fa {
 }
 
 summary {
-    display: flex;
+    /*display: flex;*/
     cursor: pointer;
     margin-left: -21px;
 }
@@ -375,7 +375,11 @@ summary {
 }
 
 summary span {
-    width: 306px;
+    /*width: 306px;*/
+}
+
+summary i.fa.fa-caret-right.fa-lg {
+    float: right;
 }
 
 .details:first-child span {
