@@ -15,25 +15,24 @@
 
     <div class="side_bar_left">
         <div class="logo_wrapper">
-            <figure><i class="fa fa-plus-square fa-3x"
-                       aria-hidden="true"></i>
+            <figure><a href="#"><img src="./images/icon_up.jpg" alt="" width="40" height="40"></a>
                 <figcaption>Ctrl+1</figcaption>
             </figure>
         </div>
         <div class="logo_wrapper">
-            <figure><img src="./images/ais_logo.jpg" alt="" width="40" height="40">
+            <figure><a href="#"><img src="./images/ais_logo.jpg" alt="" width="40" height="40"></a>
                 <figcaption>Ctrl+2</figcaption>
             </figure>
         </div>
         <div class="logo_wrapper">
-            <figure><img src="./images/rolling_scopes.png" alt="" width="40" height="40">
+            <figure><a href="#"><img src="./images/rolling_scopes.png" alt="" width="40" height="40"></a>
                 <figcaption>Ctrl+3</figcaption>
             </figure>
         </div>
 
         <div class="logo_wrapper">
-            <i class="fa fa-plus-square fa-3x"
-               aria-hidden="true"></i>
+            <a href="#"><i class="fa fa-plus-square fa-3x"
+               aria-hidden="true"></i></a>
         </div>
     </div>
     <div class="client_channels_list_container">
@@ -41,7 +40,8 @@
             <div class="bell_and_angle_wrapper">
                 <div><span id="ais">AIS</span></div>
                 <div id="angle"><i class="fa fa-angle-down fa-7x" aria-hidden="true"></i></div>
-                <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Notifications"><i class="fa fa-bell-o fa-7x" aria-hidden="true"></i></div>
+                <div class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Notifications">
+                    <i class="fa fa-bell-o fa-7x" aria-hidden="true"></i></div>
             </div>
             <div class="page_user"><i class="online"></i><span>Ilya Mokin</span></div>
         </div>
@@ -50,8 +50,10 @@
                 <li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>All
                     Threads</a>
                 </li>
-                <li class="list_title"><a href="#"><span>Channels</span>
-                    <i class="fa fa-plus-circle chanel c_m"></i></a></li>
+                <li class="list_title"><a href="#"><span class="c_m">Channels</span>
+                    <div class="hint hint--bottom-left hint--no-animate hint--rounded" data-hint="Create a channel"><i
+                            class="fa fa-plus-circle chanel"></i></div>
+                </a></li>
                 <li><a href="#"><i class="channel-status fa fa-lock"></i>admins</a></li>
                 <li><a href="#"><i class="channel-status fa fa-hashtag"></i>books</a></li>
                 <li><a href="#"><i class="channel-status fa fa-hashtag"></i>english</a></li>
@@ -61,7 +63,12 @@
                 <li><a href="#"><i class="channel-status fa fa-lock"></i>pre_study</a></li>
                 <li><a href="#"><i class="channel-status fa fa-hashtag"></i>rundom</a></li>
                 <li><a href="#"><i class="channel-status fa fa-hashtag"></i>study</a></li>
-                <li class="list_title"><a href="#"><span>Direct Messages</span><i class="fa fa-plus-circle"></i></a>
+                <li class="list_title"><a href="#"><span class="d_m">Direct Messages</span>
+                    <div class="hint hint--bottom-left hint--no-animate hint--rounded"
+                         data-hint="Open a direct message"><i
+                            class="fa fa-plus-circle"></i>
+                    </div>
+                </a>
                 </li>
                 <li><a href="#"><i class="fa fa-heart"></i>slack bot</a></li>
                 <li><a href="#"><i class="online"></i>Ilya Mokin (you)</a></li>
@@ -91,12 +98,17 @@
                 <li><a href="#"><i class="online"></i>Yuri Zvirblis</a></li>
                 <li class="list_title"><a href="#"><i class="fa fa-plus"
                                                       aria-hidden="true"></i><span>Invite People</span></a></li>
-                <li class="list_title"><a href="#"><span>Apps</span><i class="fa fa-plus-circle a_m"></i></a>
+                <li class="list_title"><a href="#">
+                    <span class="a_m">Apps</span>
+                    <div class="hint hint--bottom-left hint--no-animate hint--rounded app" data-hint="Browse apps">
+                        <i class="fa fa-plus-circle "></i>
+                    </div>
+                </a>
                 </li>
             </ul>
         </div>
         <div class="bottom_bar">
-            <p><i class="fa fa-bars fa-2x bar_m" aria-hidden="true"></i></p>
+            <div id="app" class="hint hint--top hint--no-animate hint--rounded" data-hint="Quick Switcher(Ctrl+K)"><i class="fa fa-bars fa-2x " aria-hidden="true"></i></div>
         </div>
     </div>
     <div class="client_main_container">
@@ -484,11 +496,11 @@
                 <div id="about">
                     <div class="details">
                         <span>About #study</span>
-                        <i class="fa fa-times blue fa-lg" style="float: right;"></i>
+                        <div class="hint hint--bottom-left hint--no-animate hint--rounded" data-hint="Close Right Side Bar" style="float: right;"><i class="fa fa-times blue fa-lg" ></i></div>
                     </div>
 
                     <div class="details">
-                        <details>
+                        <details class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Click to expand or collapse">
                             <summary>
                                 <span><i class="fa fa-info-circle fa-lg"
                                          style="color:#717274;"></i>Channel Details
@@ -499,7 +511,7 @@
                     </div>
 
                     <div class="details">
-                        <details>
+                        <details class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Click to expand or collapse">
                             <summary>
                                 <span> <i class="fa fa-star-o fa-lg"
                                           style="color: #2d9ee0"></i>Highlights
@@ -510,7 +522,7 @@
                     </div>
 
                     <div class="details">
-                        <details>
+                        <details class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Click to expand or collapse">
                             <summary>
                                 <span><i class="fa fa-thumb-tack fa-lg"
                                          style="color:#f26130;"></i>21 Pinned Items
@@ -521,7 +533,7 @@
                     </div>
 
                     <div class="details">
-                        <details>
+                        <details class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Click to expand or collapse">
                             <summary>
                                 <span><i class="fa fa-user-o fa-lg"
                                          style="color:#29a979;"></i>14 Members
@@ -594,7 +606,7 @@
                     </div>
 
                     <div class="details">
-                        <details>
+                        <details class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Click to expand or collapse">
                             <summary>
                                 <span><i class="fa fa-files-o fa-lg"
                                          style="color: #ff9000;"></i>Shared Files
@@ -605,7 +617,7 @@
                     </div>
 
                     <div class="details">
-                        <details>
+                        <details class="hint hint--bottom hint--no-animate hint--rounded" data-hint="Click to expand or collapse">
                             <summary>
                                 <span><i class="fa fa-bell-o fa-lg"
                                          style="color: #eb4d5c;"></i>Notification Preferences
