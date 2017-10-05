@@ -343,7 +343,7 @@
   margin-top: -11px; }
 
 .hint--bottom-right:before, .hint--bottom-right:after {
-  top: 100%;
+  top: 70%;
   left: 50%; }
 
 .hint--bottom-right:before {

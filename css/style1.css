@@ -362,18 +362,24 @@ i.fa {
 }
 
 summary {
+    display: flex;
     cursor: pointer;
     margin-left: -21px;
 }
 
-i.fa.fa-caret-right.fa-lg {
-    float: right;
-}
-
-i.fa.fa-times.blue.fa-lg {
+#cross {
     float: right;
     position: relative;
     top: -9px;
+    left: -2px;
+}
+
+summary span {
+    width: 306px;
+}
+
+.details:first-child span {
+    font-size: 18px;
 }
 
 DETAILS[open] SUMMARY ~ * {
